@@ -1,0 +1,69 @@
+@import "./variables";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-primary;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 2rem;
+  background-image: linear-gradient(
+    to bottom,
+    $color-tertiary-dark,
+    $color-primary,
+    $color-secondary,
+    $color-tertiary
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 1px;
+}
+
+//info: headings
+.heading-1 {
+  font-family: $font-secondary;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+//margins
+
+.mb-small {
+  margin-bottom: 1.5rem;
+}
+.mb-small-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-medium {
+  margin-bottom: 3rem;
+}
+
+.mb-large {
+  margin-bottom: 4.5rem;
+}
+
+.bg-clr {
+  background-color: #002629;
+}
