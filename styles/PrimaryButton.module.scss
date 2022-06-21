@@ -1,0 +1,23 @@
+@import "./variables";
+
+.btn {
+  font-family: $font-primary;
+  font-size: 1.5rem;
+  padding: 1rem 8rem;
+  width: 100%;
+  color: #fff;
+  background-color: $color-secondary;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.3);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+}

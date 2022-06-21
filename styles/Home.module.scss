@@ -1,0 +1,25 @@
+@import "./variables";
+
+.register {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+
+  &-container {
+    padding: 3rem 8rem;
+    flex-basis: 40%;
+  }
+
+  h2 {
+    width: 100%;
+    text-align: center;
+    color: $color-grey-2;
+    opacity: 0.8;
+    margin-left: -1px;
+
+    span {
+      color: $color-secondary;
+      cursor: pointer;
+    }
+  }
+}
