@@ -1,0 +1,36 @@
+@import "./variables";
+
+.about-section {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-grey-2,
+    $color-tertiary-dark
+  );
+  padding-inline-start: 7rem;
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__title {
+    text-align: left;
+    font-size: 5rem;
+    width: 50%;
+    line-height: 0.95;
+    color: $color-white;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+  }
+
+  &__text {
+    width: 75%;
+    color: rgba($color-grey-1, 0.75);
+    font-size: 1.65rem;
+    letter-spacing: 0.15rem;
+    font-family: $font-tertiary;
+
+    & p:first-child {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

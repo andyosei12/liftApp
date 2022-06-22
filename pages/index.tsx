@@ -3,6 +3,7 @@ import Head from "next/head";
 import { useState } from "react";
 import Signup from "../components/Signup";
 import Signin from "../components/Signin";
+import About from "../components/About";
 import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
@@ -13,7 +14,7 @@ const Home: NextPage = () => {
   };
 
   return (
-    <div className={styles.register}>
+    <div className={styles.home}>
       <Head>
         <title>LiftApp | {isSignin ? "Log in" : "Register"}</title>
       </Head>
@@ -32,7 +33,7 @@ const Home: NextPage = () => {
           </h2>
         )}
       </section>
-      <p>About section</p>
+      <About />
     </div>
   );
 };
