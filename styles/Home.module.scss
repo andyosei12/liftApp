@@ -1,11 +1,11 @@
 @import "./variables";
 
-.register {
+.home {
   display: flex;
   justify-content: space-between;
   height: 100vh;
 
-  &-container {
+  & .register-container {
     padding: 3rem 8rem;
     flex-basis: 40%;
   }
