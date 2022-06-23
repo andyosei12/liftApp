@@ -20,6 +20,9 @@ const Home: NextPage = () => {
       </Head>
       <section className={styles["register-container"]}>
         <h1 className="mb-large logo">LiftApp</h1>
+        <p className={styles["register-container--text"]}>
+          Draw inspirations from the stories and testimonies of others.
+        </p>
         {isSignin ? <Signin /> : <Signup />}
         {isSignin ? (
           <h2>

@@ -3,11 +3,45 @@
 .home {
   display: flex;
   justify-content: space-between;
-  height: 100vh;
+  min-height: 100vh;
+  background-color: rgba($color-white, 0.05);
 
   & .register-container {
     padding: 3rem 8rem;
     flex-basis: 40%;
+
+    @media screen and (max-width: 76.25em) {
+      flex-basis: 50%;
+    }
+    @media screen and (max-width: 55em) {
+      padding-inline: 5rem;
+      flex-basis: 45%;
+    }
+
+    @media screen and (max-width: 49.38em) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 90%;
+    }
+
+    @media screen and (max-width: 38.9em) {
+      padding-inline: 1rem;
+    }
+
+    &--text {
+      display: none;
+      font-size: 1.7rem;
+      font-family: $font-tertiary;
+      margin-bottom: 3rem;
+      font-weight: 700;
+      letter-spacing: 0.05rem;
+      @media screen and (max-width: 49.38em) {
+        display: block;
+      }
+    }
   }
 
   h2 {

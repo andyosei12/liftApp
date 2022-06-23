@@ -1,5 +1,13 @@
 @import "./variables";
 
+//media queries
+//bp-desktop: 76.25em; 1220px;
+//bp-large: 62.8em; 1005px
+//bp-small-large: 55em; 880px
+//bp-medium: 49.38em; 790px;
+//bp-small-medium: 38.9em; 622px;
+//bp-small: 28.1em; 450px;
+
 *,
 *::before,
 *::after {
@@ -10,6 +18,10 @@
 
 html {
   font-size: 62.5%;
+
+  @media screen and (max-width: 62.8em) {
+    font-size: 60%;
+  }
 }
 
 body {
@@ -38,6 +50,10 @@ a {
   background-clip: text;
   color: transparent;
   letter-spacing: 1px;
+
+  @media screen and (max-width: 49.38em) {
+    font-size: 3rem;
+  }
 }
 
 //info: headings
