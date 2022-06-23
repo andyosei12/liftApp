@@ -4,7 +4,7 @@ import PrimaryButton from "./buttons/PrimaryButton";
 
 const Signup = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles["form-container"]}>
       <h1 className="heading-1 mb-small">Sign up</h1>
       <form>
         <Input label="name" type="text" />
@@ -13,7 +13,7 @@ const Signup = () => {
         <Input label="confirm password" type="password" />
         <PrimaryButton name="Create account" />
       </form>
-    </div>
+    </section>
   );
 };
 

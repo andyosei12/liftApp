@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   };
 
   return (
-    <div className={styles.home}>
+    <main className={styles.home}>
       <Head>
         <title>LiftApp | {isSignin ? "Log in" : "Register"}</title>
       </Head>
@@ -34,7 +34,7 @@ const Home: NextPage = () => {
         )}
       </section>
       <About />
-    </div>
+    </main>
   );
 };
 

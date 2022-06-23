@@ -4,7 +4,7 @@ import PrimaryButton from "./buttons/PrimaryButton";
 
 const Signin = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles["form-container"]}>
       <h1 className="heading-1 mb-small">Sign in</h1>
       <form>
         <Input label="Email" type="email" />

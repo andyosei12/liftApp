@@ -7,10 +7,10 @@ interface InputProps {
 
 const Input = ({ label, ...otherProps }: InputProps) => {
   return (
-    <div className={`${styles["input-group"]} mb-small`}>
+    <p className={`${styles["input-group"]} mb-small`}>
       <label className={`${styles.label} mb-small-1`}>{label}</label>
       <input {...otherProps} />
-    </div>
+    </p>
   );
 };
 
